@@ -8,7 +8,7 @@ int colores = 0;
 
 void setup(){
   size(500,500);
-  background(173, 216, 230);
+
 }
 void draw(){
   //stroke((float)Math.random()*255,(float)Math.random()*255,(float)Math.random()*255);
