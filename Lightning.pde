@@ -2,27 +2,26 @@ double startX = Math.random()*500;
 double startY = 0;
 double endX = Math.random()*500;  
 double endY = 0;
-int stroke = 0;
+int liner = 0;
 int clicks = 0;
 int colores = 0;
 
 void setup(){
   size(500,500);
   background(173, 216, 230);
-
 }
 void draw(){
-  if (stroke % 2 == 0){
+  if (liner % 2 == 0){
     strokeWeight(12);
     stroke(48,126,64);
-    stroke-=1;
+    liner-=1;
   }
   else{
     strokeWeight(8);
     stroke(56,163,42);
-    stroke+=1;
+    liner+=1;
   }
-  endX = startX + Math.random()*20 - 10;
+  endX = startX + Math.random()*18 - 9;
   endY = startY + Math.random()*20;
   line((float)startX,(float)startY,(float)endX,(float)endY);
   startX=endX;
